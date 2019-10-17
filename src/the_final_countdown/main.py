@@ -17,9 +17,11 @@ def main():
 
     selected_date = input("Date: ")
 
-    final_countdown_td = DATES[selected_date] - datetime.datetime.now()
-
-    print(f"Days remaining: {final_countdown_td.days}")
+    try:
+        final_countdown_td = DATES[selected_date] - datetime.datetime.now()
+        print(f"Days remaining: {final_countdown_td.days}")
+    except KeyError:
+        print("Please select a valid date")
 
 
 if __name__ == "__main__":

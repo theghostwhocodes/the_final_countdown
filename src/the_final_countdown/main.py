@@ -14,7 +14,7 @@ def main():
     print("It's the final countdown")
     print("=" * 80)
     print("Select the date:")
-    print("1) New year's day %d" % (current_year + 1))
+    print(f"1) New year's day {current_year + 1}")
     print("2) Halloween %d" % current_year)
     print("3) Christmas %d" % current_year)
 

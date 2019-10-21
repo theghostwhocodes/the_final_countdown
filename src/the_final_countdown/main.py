@@ -1,6 +1,6 @@
 import datetime
 
-current_year = int(datetime.datetime.now().strftime("%Y"))
+current_year = datetime.datetime.now().year
 
 DATES = {
     "1": datetime.datetime(year=current_year + 1, month=1, day=1),

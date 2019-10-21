@@ -15,7 +15,7 @@ def main():
     print("=" * 80)
     print("Select the date:")
     print(f"1) New year's day {current_year + 1}")
-    print("2) Halloween %d" % current_year)
+    print(f"2) Halloween {current_year}")
     print("3) Christmas %d" % current_year)
 
     selected_date = input("Date: ")

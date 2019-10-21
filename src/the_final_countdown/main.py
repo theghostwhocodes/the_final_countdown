@@ -1,10 +1,11 @@
 import datetime
 
+current_year = datetime.datetime.now().year
 
 DATES = {
-    "1": datetime.datetime(year=2020, month=1, day=1),
-    "2": datetime.datetime(year=2019, month=10, day=31),
-    "3": datetime.datetime(year=2019, month=12, day=25),
+    "1": datetime.datetime(year=current_year + 1, month=1, day=1),
+    "2": datetime.datetime(year=current_year, month=10, day=31),
+    "3": datetime.datetime(year=current_year, month=12, day=25),
 }
 
 
@@ -13,9 +14,9 @@ def main():
     print("It's the final countdown")
     print("=" * 80)
     print("Select the date:")
-    print("1) New year's day 2020")
-    print("2) Halloween 2019")
-    print("3) Christmas 2019")
+    print(f"1) New year's day {current_year + 1}")
+    print(f"2) Halloween {current_year}")
+    print(f"3) Christmas {current_year}")
 
     selected_date = input("Date: ")
 
